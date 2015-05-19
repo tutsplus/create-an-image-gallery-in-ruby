@@ -1,14 +1,14 @@
-%h1 All images
+%h1.text-center All images
 
 .row
   %ul.list-unstyled
     -@images.each do |image|
       %li.col-md-4
-        %h2=image.title
-        %a{href: image.file, data: { lightbox: "gallery", title: image.title } }
+        %h3=image.title
+        %a.thumbnail{href: image.file, data: { lightbox: "gallery", title: image.title } }
           %img{src: image.file.url(:small), width: "100%"}
 
-%h1 Upload new image
+%h2 Upload new image
 
 %form(action="/images" method="post" enctype="multipart/form-data")
   %p

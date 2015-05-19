@@ -1,0 +1,27 @@
+body {
+  background-color: #f6f6f6;
+  font-family: Roboto, sans-serif;
+  color: #223
+}
+
+#app-title {
+  margin: 1em 0;
+}
+
+#file-placeholder img {
+  border: 3px dashed #ccc;
+  padding: 1em
+}
+
+#gallery li {
+  margin: 0 0 2em;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 1em 0;
+}
+
+.stMainServices, .stHBubble {
+  height: 22px !important;
+}
