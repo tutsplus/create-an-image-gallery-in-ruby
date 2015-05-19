@@ -1,0 +1,19 @@
+%h1 All images
+
+-@images.each do |image|
+  %li
+    %h2=image.title
+    %img{src: image.file, width: "100%"}
+
+%h1 Upload new image
+
+%form(action="/images" method="post" enctype="multipart/form-data")
+  %p
+    %input(type="file" name="image[file]" id="file")
+
+  %p
+    %input(type="text" name="image[title]" class="form-control" placeholder="Enter a title for the image.")
+
+  %p
+    %button(class="btn btn-primary") Upload!
+
