@@ -11,3 +11,7 @@
   %body
     .container
       =yield
+
+    %script(src="http://w.sharethis.com/button/buttons.js")
+    :javascript
+      stLight.options({publisher: "11f8bf22-98ca-4c06-8bfc-cb4a0f5a035e", doNotHash: false, doNotCopy: false, hashAddressBar: false});

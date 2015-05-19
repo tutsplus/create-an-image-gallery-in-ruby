@@ -5,8 +5,14 @@
     -@images.each do |image|
       %li.col-md-4
         %h3=image.title
-        %a.thumbnail{href: image.file, data: { lightbox: "gallery", title: image.title } }
-          %img{src: image.file.url(:small), width: "100%"}
+
+        %p
+          %a.thumbnail{href: image.file, data: { lightbox: "gallery", title: image.title } }
+            %img{src: image.file.url(:small), width: "100%"}
+
+        %p
+          %span(class='st_facebook_hcount' displayText='Facebook' st_url="#{request.base_url}/images/#{image.id}")
+          %span(class='st_twitter_hcount' displayText='Tweet' st_url="#{request.base_url}/images/#{image.id}")
 
 %h2 Upload new image
 
