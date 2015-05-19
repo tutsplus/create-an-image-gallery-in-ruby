@@ -1,9 +1,12 @@
 %h1 All images
 
--@images.each do |image|
-  %li
-    %h2=image.title
-    %img{src: image.file, width: "100%"}
+.row
+  %ul.list-unstyled
+    -@images.each do |image|
+      %li.col-md-4
+        %h2=image.title
+        %a{href: image.file, data: { lightbox: "gallery", title: image.title } }
+          %img{src: image.file.url(:small), width: "100%"}
 
 %h1 Upload new image
 
