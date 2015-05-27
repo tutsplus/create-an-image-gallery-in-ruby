@@ -1,3 +1,36 @@
+*--------------Course Details--------------*
+
+## Instructor: José Mota
+
+## Difficulty: Intermediate
+
+## Source Files Location:
+https://github.com/josemota/tutsplus-build-an-image-gallery-in-ruby
+
+## Topic: Code
+
+## Categories: Programming
+
+## Software/Languages/Frameworks (include version): Ruby 2, Sinatra, Carrierwave, Sequel
+
+## Course Rate: 1750 USD
+
+*--------------Course Outline--------------*
+
+# Course Name:
+
+Build an Image Gallery in Ruby
+
+# Course Description:
+
+This course will demonstrate how to use Sinatra and Carrierwave to build an online image gallery.
+
+# Source Files Description:
+
+The source files contain the code that's executed in the lessons. Each file matches a lesson. Some lessons didn't require a file.
+
+*--------------Course--------------*
+
 ## 1.1. Introduction
 
 Welcome to the course! In this lesson you'll be given an introduction to its contents and to what you should expect when following its lessons.
